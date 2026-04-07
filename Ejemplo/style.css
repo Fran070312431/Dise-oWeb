@@ -1,0 +1,163 @@
+/* PALETA DE COLORES OVER ZHOUSANDS */
+:root {
+    --verde-oscuro: #1b3d16;
+    --verde-vivo: #4caf50;
+    --rosa-oscuro: #880d1e;
+    --rosa-brillante: #ff4d6d;
+    --borde-negro: #000000;
+}
+
+/* RESET ULTRA-FLUIDO (SIN DELAY) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Evitamos transiciones de tamaño para que el resize sea instantáneo */
+    transition: transform 0.1s ease, background-color 0.2s, box-shadow 0.2s;
+}
+
+body {
+    background-color: #121212;
+    /* Patrón de puntos estilo cómic/manga */
+    background-image: radial-gradient(#222 10%, transparent 10%);
+    background-size: 20px 20px;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    overflow-x: hidden;
+}
+
+/* BARRA DE DESPLAZAMIENTO (SCROLLBAR) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--verde-vivo);
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* CABECERA Y LOGO */
+header {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--verde-oscuro) 0%, transparent 100%);
+    border-bottom: 5px solid var(--borde-negro);
+}
+
+.logo {
+    font-family: 'Bangers', cursive;
+    font-size: clamp(3rem, 10vw, 6rem);
+    color: var(--rosa-brillante);
+    letter-spacing: 4px;
+    -webkit-text-stroke: 3px var(--borde-negro);
+    filter: drop-shadow(6px 6px 0px var(--borde-negro));
+    margin-bottom: 30px;
+    transform: rotate(-2deg); /* Efecto inclinado cartoon */
+}
+
+/* BUSCADOR ESTILO BURBUJA */
+.search-container {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    background: #fff;
+    border: 4px solid var(--borde-negro);
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px var(--rosa-oscuro);
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.2rem;
+    outline: none;
+    color: #333;
+}
+
+.search-btn {
+    background: var(--verde-vivo);
+    border-left: 4px solid var(--borde-negro);
+    padding: 0 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.search-btn:hover {
+    background: var(--rosa-brillante);
+    color: black;
+}
+
+/* CONTENEDOR DE TARJETAS */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* TARJETAS CON PROFUNDIDAD 3D */
+.card {
+    background: #2a2a2a;
+    border: 4px solid var(--borde-negro);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 10px 0px var(--borde-negro);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 5px 0px var(--borde-negro);
+}
+
+.card h2 {
+    color: var(--verde-vivo);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    -webkit-text-stroke: 1px #000;
+}
+
+.card p {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* BOTONES DE ACCIÓN */
+.btn-game {
+    display: inline-block;
+    background: var(--rosa-brillante);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 3px solid var(--borde-negro);
+    border-radius: 12px;
+    box-shadow: 0 5px 0 var(--rosa-oscuro);
+    font-size: 1.2rem;
+}
+
+.btn-game:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 var(--rosa-oscuro);
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: var(--verde-vivo);
+    text-shadow: 2px 2px #000;
+}

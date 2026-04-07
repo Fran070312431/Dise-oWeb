@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Zhousands | Oficial</title>
+    
+    <!-- Fuentes de Google para el estilo Cartoon -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <!-- Conexión con tu archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">OVER ZHOUSANDS</div>
+        
+        <!-- Barra de búsqueda estilo burbuja -->
+        <form class="search-container" onsubmit="buscarZombie(event)">
+            <input type="text" id="searchInput" class="search-input" placeholder="¿BUSCAR CEREBROS?">
+            <button type="submit" class="search-btn">¡ZAS!</button>
+        </form>
+    </header>
+
+    <main>
+        <!-- Tarjeta 1 -->
+        <div class="card">
+            <h2>HORDAS ONLINE</h2>
+            <p>¡Únete a miles de jugadores y sobrevive a la gran invasión de Over Zhousands!</p>
+            <a href="#" class="btn-game">¡JUGAR YA!</a>
+        </div>
+
+        <!-- Tarjeta 2 (Estilo Rosa) -->
+        <div class="card" style="border-color: var(--rosa-brillante); box-shadow: 0px 10px 0px var(--rosa-oscuro);">
+            <h2>PERSONAJES</h2>
+            <p>Personaliza a tu superviviente con equipo táctico y habilidades locas.</p>
+            <a href="#" class="btn-game" style="background: var(--verde-vivo); box-shadow: 0 5px 0 var(--verde-oscuro);">VER TODOS</a>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card">
+            <h2>RANKING MUNDIAL</h2>
+            <p>¿Eres el mejor matando zombies? Demuéstralo en la tabla de clasificación.</p>
+            <a href="#" class="btn-game">TOP 100</a>
+        </div>
+    </main>
+
+    <footer>
+        DESARROLLADO POR EL EQUIPO OVER ZHOUSANDS - 2024
+    </footer>
+
+    <!-- Pequeño script para que el botón de búsqueda haga algo -->
+    <script>
+        function buscarZombie(e) {
+            e.preventDefault();
+            const busqueda = document.getElementById('searchInput').value;
+            if(busqueda) {
+                alert("Buscando a " + busqueda + "... ¡Cuidado, hay uno detrás de ti!");
+            }
+        }
+    </script>
+
+</body>
+</html>
