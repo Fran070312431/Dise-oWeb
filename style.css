@@ -17,6 +17,7 @@ body {
     background-color: #1a1a1a; /* Fondo oscuro */
     color: white;
     padding: 1rem 0;
+    font-size: 1.1rem;
     position: sticky; /* Se queda pegado al llegar arriba */
     top: 0;
     width: 100%;
@@ -25,7 +26,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,7 @@ body {
 }
 
 .nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .nav ul li a {
@@ -59,9 +60,10 @@ body {
     color: #08c402;
 }
 
-/* Contenido de prueba */
+/* Para cambiar la posicion del texto */
 .hero {
-    height: 60vh;
+    font-size: 1.5rem;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
