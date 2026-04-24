@@ -60,6 +60,26 @@ body {
     color: #08c402;
 }
 
+/* Navegacion 1*/
+.nav1 ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav1 ul li {
+    margin-left: 30px;
+}
+
+.nav1 ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #08c402;
+}
+
 /* Para cambiar la posicion del texto */
 .hero {
     font-size: 1.5rem;
