@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
 /* Configuración General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Jaro';
 }
 
 body {
@@ -54,7 +56,7 @@ body {
 }
 
 .nav ul li a:hover {
-    color: #00d40b;
+    color: #08c402;
 }
 
 /* Contenido de prueba */
