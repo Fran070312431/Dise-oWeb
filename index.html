@@ -29,25 +29,21 @@
             <!-- iconos redes sociales + Juega Ya + Menu desplegable en el modo movil -->
             <nav class="nav1">
                 <ul>
-                    <!-- YouTube -->
                     <li>
                         <a href="#" class="icon-btn">
                             <img src="Imagenes/Boton_youtube.png" alt="YouTube" class="btn-icon">
                         </a>
                     </li>
-                    <!-- Instagram -->
                     <li>
                         <a href="https://www.instagram.com/sickgeckostudio/" class="icon-btn">
                             <img src="Imagenes/Boton_instagram.png" alt="Instagram" class="btn-icon">
                         </a>
                     </li>
-                    <!-- Juega Ya -->
                     <li>
-                        <a href="https://sickgecko.itch.io/over-zhousands" class="play-btn">
+                        <a href="https://sickgecko.itch.io/over-zhousands" class="play-btn" target="_blank">
                             <img src="Imagenes/Boton_juega.png" alt="Juega Ya" class="play-btn-icon">
                         </a>
                     </li>
-                    <!-- Botón desplegable: solo visible en movil -->
                     <li>
                         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
                             <img src="Imagenes/Boton_menu.png" alt="Menú" class="menu-btn-icon">
@@ -88,7 +84,6 @@
             mobileMenu.classList.remove('open');
         }
 
-        // Cerrar menú al hacer click fuera
         document.addEventListener('click', (e) => {
             if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
                 mobileMenu.classList.remove('open');
@@ -96,10 +91,50 @@
         });
     </script>
 
+    <!-- FOOTER -->
     <footer class="main-footer">
-        <div class="container">
-            <p>&copy; COPYRIGHT &copy; 2026 SICKGECKOSTUDIO</p>
-            <p>ALL RIGHTS RESERVED</p>
+
+        <!-- Imagen esquina izquierda -->
+        <!-- Sustituye "Imagenes/footer-izquierda.png" por tu imagen -->
+        <img src="Imagenes/footer-izquierda.png" alt="" class="footer-corner footer-corner--left">
+
+        <!-- Imagen esquina derecha -->
+        <!-- Sustituye "Imagenes/footer-derecha.png" por tu imagen -->
+        <img src="Imagenes/footer-derecha.png" alt="" class="footer-corner footer-corner--right">
+
+        <!-- Contenido central del footer dividido en 3 columnas -->
+        <div class="footer-grid">
+
+            <!-- Columna izquierda: copyright + devlogs -->
+            <div class="footer-col footer-col--left">
+                <p class="footer-copy">© COPYRIGHT © 2026 <strong>SICKGECKOSTUDIO</strong><br>ALL RIGHTS RESERVED</p>
+                <ul class="footer-links">
+                    <li><a href="#devlogs">• DEVLOGS</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna central: logo + email -->
+            <div class="footer-col footer-col--center">
+                <img src="Imagenes/Logo_equipo.png" alt="Logo" class="footer-logo">
+                <a href="mailto:sickgeckostudio@gmail.com" class="footer-email">Sickgeckostudio@gmail.com</a>
+            </div>
+
+            <!-- Columna derecha: PEGI + redes sociales -->
+            <div class="footer-col footer-col--right">
+                <img src="Imagenes/Pegi12.png" alt="PEGI 12" class="footer-pegi">
+                <div class="footer-social">
+                    <p class="footer-social-label">Redes Sociales</p>
+                    <div class="footer-social-icons">
+                        <a href="#" class="icon-btn">
+                            <img src="Imagenes/Boton_youtube.png" alt="YouTube" class="footer-icon">
+                        </a>
+                        <a href="https://www.instagram.com/sickgeckostudio/" class="icon-btn">
+                            <img src="Imagenes/Boton_instagram.png" alt="Instagram" class="footer-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
 
