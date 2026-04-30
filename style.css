@@ -17,8 +17,8 @@ body {
 .main-header {
     background-color: #5F3C67;
     color: #E0DCC8;
-    padding: 0.8rem 0;
-    font-size: 1.3rem;
+    padding: 0.7rem 0;
+    font-size: 1.4rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -46,7 +46,7 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: opacity 0.3s;
@@ -69,7 +69,7 @@ body {
 }
 
 .nav ul li {
-    margin: 0 16px;
+    margin: 0 13px;
 }
 
 .nav ul li a {
@@ -117,14 +117,14 @@ body {
 }
 
 .btn-icon {
-    height: 45px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     display: block;
 }
 
 .play-btn-icon {
-    height: 45px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -146,7 +146,7 @@ body {
 }
 
 .menu-btn-icon {
-    height: 45px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -199,10 +199,26 @@ body {
     text-align: center;
 }
 
+.main-footer {
+    background-image: url('Imagenes/Footer_fondo.png');
+    background-size: 1920px;
+    background-position: center;
+    color: #E0DCC8;
+    text-align: center;
+    padding: 68px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Color del fondo de la pagina web */
 .spacer {
     height: 2000px;
-    background: linear-gradient(to bottom, #1E1121, #5F3C67);
+    background: linear-gradient(to bottom, #1E1121);
 }
 
 /* Offset para anclas con navbar sticky */
