@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -218,8 +218,12 @@ body {
 /* Footer */
 
 .main-footer {
-    padding: 10px 220px; /* Para más o menos altura */
-    background-color: #5F3C67;
+    padding: 0px 220px; 
+    height: 190px;
+    background-image: url('Imagenes/Footer_fondo.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     color: #E0DCC8;
     position: relative;
     overflow: hidden;
@@ -250,10 +254,11 @@ body {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 40px;
-    position: relative; /* por encima de las imágenes de esquina */
+    position: relative; 
     z-index: 1;
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 90px;
 }
 
 /* Columna izquierda */
@@ -295,6 +300,7 @@ body {
     align-items: center;
     gap: 14px;
     text-align: center;
+    margin-top: 55px;
 }
 
 .footer-logo {
@@ -322,6 +328,7 @@ body {
     align-items: center;
     gap: 20px;
     justify-content: flex-end;
+    margin-top: auto;
 }
 
 .footer-pegi {
