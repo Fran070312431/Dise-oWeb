@@ -10,33 +10,91 @@
 
     <header class="main-header">
         <div class="container">
-            <h1 class="logo">LOGO</h1>
+
+            <!-- Logo -->
+            <a href="#inicio" class="logo-link">
+                <img src="Imagenes/Logo-OZ.png" alt="Logo Over Zhousands" class="logo-img">
+            </a>
+
+            <!-- Nav principal (se oculta en movil) -->
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Galería</a></li>
-                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#contacto">CONTÁCTANOS</a></li>
+                    <li><a href="#devlogs">DEVLOGS</a></li>
                 </ul>
             </nav>
+
+            <!-- iconos redes sociales + Juega Ya + Menu desplegable en el modo movil -->
             <nav class="nav1">
                 <ul>
-                    <li><a href="#">Redes social</a></li>
-                    <li><a href="#">Itch.io</a></li>
+                    <!-- YouTube -->
+                    <li>
+                        <a href="#" class="icon-btn">
+                            <img src="Imagenes/Boton_youtube.png" alt="YouTube" class="btn-icon">
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li>
+                        <a href="#" class="icon-btn">
+                            <img src="Imagenes/Boton_instagram.png" alt="Instagram" class="btn-icon">
+                        </a>
+                    </li>
+                    <!-- Juega Ya -->
+                    <li>
+                        <a href="https://sickgecko.itch.io/over-zhousands" class="play-btn">
+                            <img src="Imagenes/Boton_juega.png" alt="Juega Ya" class="play-btn-icon">
+                        </a>
+                    </li>
+                    <!-- Botón desplegable: solo visible en movil -->
+                    <li>
+                        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+                            <img src="Imagenes/Boton_menu.png" alt="Menú" class="menu-btn-icon">
+                        </button>
+                    </li>
                 </ul>
             </nav>
+
+        </div>
+
+        <!-- Menú desplegable mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#inicio" onclick="cerrarMenu()">INICIO</a>
+            <a href="#galeria" onclick="cerrarMenu()">GALERÍA</a>
+            <a href="#contacto" onclick="cerrarMenu()">CONTÁCTANOS</a>
+            <a href="#devlogs" onclick="cerrarMenu()">DEVLOGS</a>
         </div>
     </header>
 
+    /* Contenido principal */
     <main class="content">
-        <section class="hero">
+        <section class="hero" id="inicio">
             <h1>Bienvenido a Over Zhousands</h1>
-            <p>uwu</p>
         </section>
-        
-        <section class="spacer">
-            
-        </section>
+
+        <section class="spacer"></section>
     </main>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        function cerrarMenu() {
+            mobileMenu.classList.remove('open');
+        }
+
+        // Cerrar menú al hacer click fuera
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('open');
+            }
+        });
+    </script>
 
 </body>
 </html>
