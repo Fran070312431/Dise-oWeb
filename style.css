@@ -219,7 +219,7 @@ body {
 
 .main-footer {
     padding: 0px 220px; 
-    height: 190px;
+    min-height: 190px;
     background-image: url('Imagenes/Footer_fondo.png');
     background-size: cover;
     background-position: bottom;
@@ -272,6 +272,10 @@ body {
 .footer-copy {
     font-size: 1rem;
     line-height: 1.5;
+    color: #77A248;
+}
+
+.footer-studio, span{
     color: #E0DCC8;
 }
 
@@ -311,14 +315,18 @@ body {
 
 /* Email con color distintivo */
 .footer-email {
-    color: #77A248;          /* ← cambia este color para el email */
+    color: #77A248;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
+.footer-gmail, span {
+    color: #E0DCC8;
+}
+
 .footer-email:hover {
-    color: #a3d46a;
+    color: #B2DD82;
     text-decoration: underline;
 }
 
@@ -331,7 +339,7 @@ body {
     margin-top: auto;
 }
 
-.footer-pegi {
+.footer-udit {
     height: 60px;
     width: auto;
     object-fit: contain;
@@ -345,7 +353,7 @@ body {
 }
 
 .footer-social-label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #a3d46a;
 }
 
@@ -362,10 +370,12 @@ body {
 
 /* Responsive Footer */
 
-@media (max-width: 768px) {
+/* Responsive tablet */
+@media (max-width: 900px) {
     .main-footer {
-        padding: 40px 20px;
-        width: 100%;
+        background-image: url('Imagenes/Footer_imagen_tablet.png');
+        background-size: cover;
+        background-position: bottom center;
     }
 
     .footer-corner {
@@ -376,15 +386,62 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 28px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .footer-col--center {
+        order: 1;
     }
 
     .footer-col--left {
         align-items: center;
         text-align: center;
+        order: 2;
     }
 
     .footer-col--right {
         justify-content: center;
+        order: 3;
+    }
+}
+
+/* Responsive movil */
+@media (max-width: 768px) {
+    .main-footer {
+        background-image: url('Imagenes/Footer_imagen_movil.png');
+        background-size: cover;
+        background-position: bottom center;
+        padding: 20px 20px;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .footer-corner {
+        height: 50%;   /* en movil las esquinas son más pequeñas */
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 28px;
+        padding-top: 30px;
+    }
+
+    .footer-col--center {
+        order: 1;
+    }
+
+    .footer-col--left {
+        align-items: center;
+        text-align: center;
+        order: 2;
+    }
+
+    .footer-col--right {
+        justify-content: center;
+        order: 3;
     }
 }
 
