@@ -494,12 +494,22 @@ body {
 }
 /*  GALERÍA PERSONAJES  */
 
+/* TITULO GALERÍA */
+
+.galeria-title{
+    text-align: center;
+    font-size: 7rem; 
+    color: #E0DCC8;
+    margin: 0 auto 80px auto;
+    width: fit-content;
+}
+
 .personaje-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 190px;
 }
 
 .lado{
@@ -510,16 +520,16 @@ body {
 }
 
 .lado img{
-    width: 100%;
-    max-width: 160px; 
+      height: auto;
 }
 
 /* LORE */
 .lore-box{
-    background: #2A0F2F;
+    background: #2b362f;
     color: #E0DCC8;
     padding: 15px 20px;
     max-width: 300px;
+    font-size: 1.2rem;
 }
 
 /* POSICIÓN */
@@ -554,4 +564,49 @@ body {
         transform: none;
         text-align: center;
     }
+}
+/* ===== TAMAÑOS + POSICIÓN ===== */
+
+/* ZOMBIE 1 */
+.img-z1-a {
+    max-width: 180px;
+    transform: translateX(-30px) translateY(10px);
+}
+
+.img-z1-b {
+    max-width: 200px;
+    transform: translateX(30px) translateY(-10px);
+}
+
+/* ZOMBIE 2 */
+.img-z2-a {
+    max-width: 260px;
+    transform: translateX(-40px) translateY(-10px);
+}
+
+.img-z2-b {
+    max-width: 280px;
+    transform: translateX(40px) translateY(-10px);
+}
+
+/* ZOMBIE 3 */
+.img-z3-a {
+    max-width: 150px;
+    transform: translateX(-20px) translateY(-10px);
+}
+
+.img-z3-b {
+    max-width: 170px;
+    transform: translateX(20px) translateY(-10px);
+}
+
+/* ZOMBIE 4 */
+.img-z4-a {
+    max-width: 180px;
+    transform: translateX(-25px) translateY(-10px);
+}
+
+.img-z4-b {
+    max-width: 160px;
+    transform: translateX(25px) translateY(-10px);
 }
