@@ -494,68 +494,64 @@ body {
 }
 /*  GALERÍA PERSONAJES  */
 
-.galeria-personajes{
-    padding: 80px 10%;
+.personaje-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.lado{
     display: flex;
     flex-direction: column;
-    gap: 60px;
-}
-
-.galeria-title{
-    text-align: center;
-    font-size: 3rem;
-    color: #E0DCC8;
-    margin-bottom: 40px;
-}
-
-.personaje-card{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
-.personaje-img img{
-    width: 220px;
-    image-rendering: pixelated;
+.lado img{
+    width: 100%;
+    max-width: 160px; 
 }
 
-.personaje-info{
-    flex: 1;
-    color: #E0DCC8;
-}
-
-.personaje-info h3{
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-/* Caja de lore inclinada */
+/* LORE */
 .lore-box{
-    background-color: #2A0F2F; /* oscuro como en tu imagen */
+    background: #2A0F2F;
     color: #E0DCC8;
-    padding: 20px 30px;
-    display: inline-block;
-    max-width: 400px;
+    padding: 15px 20px;
+    max-width: 300px;
+}
+
+/* POSICIÓN */
+.arriba{
     transform: rotate(-5deg);
 }
-/* Para variar inclinación*/
-.lore-box.right{
+
+.abajo{
     transform: rotate(5deg);
 }
-.personaje-card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+
+/* RESPONSIVE  */
+
+@media (max-width: 900px){
+    .personaje-grid{
+        gap: 40px;
+    }
+
+    .lado img{
+        max-width: 130px;
+    }
 }
 
-/* Alternar filas */
-.personaje-card.reverse{
-    flex-direction: row-reverse;
-}
-.personaje-info h3{
-    background-color: #2A0F2F;
-    display: inline-block;
-    padding: 8px 16px;
-    margin-bottom: 20px;
+@media (max-width: 600px){
+
+    .personaje-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .lore-box{
+        transform: none;
+        text-align: center;
+    }
 }
