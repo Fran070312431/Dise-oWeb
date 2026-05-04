@@ -518,16 +518,16 @@ body {
 }
 
 .zombie-2 {
-    margin-top: 80px;
+    margin-top: 400px;
     margin-left: 30px;
 }
 
 .zombie-3 {
-    margin-top: -20px;
+    margin-top: 500px;
 }
 
 .zombie-4 {
-    margin-top: 10px;
+    margin-top: 400px;
     margin-left: -40px;
 }
 
@@ -548,7 +548,7 @@ body {
     background: #2b362f;
     color: #E0DCC8;
     padding: 15px 20px;
-    max-width: 300px;
+    max-width: 600px;
     font-size: 1.2rem;
 }
 
@@ -565,57 +565,57 @@ body {
 
 /* ZOMBIE 1 */
 .img-z1-a {
-    max-width: 180px;
-    transform: translateX(20px) translateY(10px);
+    max-width: 300px;
+    transform: translateX(20px) translateY(200px);
 }
 
 .img-z1-b {
-    max-width: 200px;
-    transform: translateX(-20px) translateY(-10px);
+    max-width: 300px;
+    transform: translateX(-30px) translateY(-10px);
 }
 
 /* ZOMBIE 2 */
 .img-z2-a {
-    max-width: 260px;
+    max-width: 400px;
     transform: translateX(20px) translateY(-10px);
 }
 
 .img-z2-b {
-    max-width: 280px;
-    transform: translateX(-20px) translateY(-10px);
+    max-width: 400px;
+    transform: translateX(-20px) translateY(200px);
 }
 
 /* ZOMBIE 3 */
 .img-z3-a {
-    max-width: 150px;
-    transform: translateX(20px) translateY(-10px);
+    max-width: 240px;
+    transform: translateX(20px) translateY(200px);
 }
 
 .img-z3-b {
-    max-width: 170px;
+    max-width: 240px;
     transform: translateX(-20px) translateY(-10px);
 }
 
 /* ZOMBIE 4 */
 .img-z4-a {
-    max-width: 180px;
+    max-width: 240px;
     transform: translateX(20px) translateY(-10px);
 }
 
 .img-z4-b {
-    max-width: 160px;
-    transform: translateX(-20px) translateY(120px);
+    max-width: 240px;
+    transform: translateX(-20px) translateY(160px);
 }
 
 /* ===== POSICIÓN LORE INDIVIDUAL ===== */
 
 /* ZOMBIE 1 */
 .lore-z1-a {
-    transform: translateX(-20px) translateY(15px) rotate(5deg);
+    transform: translateX(10px) translateY(200px) rotate(5deg);
 }
 
 .lore-z1-b {
-    transform: translateX(20px) translateY(-15px) rotate(-5deg);
+    transform: translateX(-40px) translateY(-15px) rotate(-5deg);
 }
 
 /* ZOMBIE 2 */
@@ -624,25 +624,25 @@ body {
 }
 
 .lore-z2-b {
-    transform: translateX(25px) translateY(-10px) rotate(-5deg);
+    transform: translateX(25px) translateY(200px) rotate(-5deg);
 }
 
 /* ZOMBIE 3 */
 .lore-z3-a {
-    transform: translateX(-15px) translateY(10px) rotate(5deg);
+    transform: translateX(-15px) translateY(200px) rotate(5deg);
 }
 
 .lore-z3-b {
-    transform: translateX(15px) translateY(-10px) rotate(-5deg);
+    transform: translateX(15px) translateY(-15px) rotate(-5deg);
 }
 
 /* ZOMBIE 4 */
 .lore-z4-a {
-    transform: translateX(-20px) translateY(60px) rotate(5deg);
+    transform: translateX(-20px) translateY(-10px) rotate(5deg);
 }
 
 .lore-z4-b {
-    transform: translateX(20px) translateY(60px) rotate(-5deg);
+    transform: translateX(20px) translateY(150px) rotate(-5deg);
 }
 
 /* ===== RESPONSIVE ===== */
