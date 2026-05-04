@@ -105,33 +105,206 @@ body {
     align-items: center;
 }
 
-.icon-btn,
-.play-btn {
-    display: flex;
+/* --- Estilos Base para todos los botones --- */
+.btn-os-icon,
+.btn-os-text {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.3s, transform 0.2s;
+    background-color: #77A248; /* Color verde de tus imágenes */
+    border: 4px solid #E0DCC8;   /* Color beige de tus bordes */
+    transition: all 0.3s ease;
+    cursor: pointer;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.icon-btn:hover,
-.play-btn:hover {
-    opacity: 0.75;
-    transform: scale(1.08);
+/* Efecto Hover general */
+.btn-os-icon:hover,
+.btn-os-text:hover {
+    transform: scale(1.1);
+    background-color: #E0DCC8; /* Invierte colores al hacer hover */
 }
 
-.btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+/* --- Botones Icono (Circulares como image_0, 1, 3) --- */
+.btn-os-icon {
+    width: 60px;  /* Ajusta el tamaño según necesites */
+    height: 60px;
+    border-radius: 25px;
+    position: relative;
 }
 
-.play-btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+/* --- Botón Texto  --- */
+.btn-os-text {
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: #E0DCC8;
+    font-family: 'Jaro', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-os-text:hover {
+    color: #77A248; /* Texto verde al hacer hover */
+}
+
+/* --- Icono Itch.io mejorado --- */
+.itch-icon {
+    display: none; 
+    width: 24px;
+    height: 16px;
+    background-color: #E0DCC8; 
+    position: relative;
+    /* Esto lo hace más redondeado */
+    border-radius: 8px; 
+}
+
+/* Los "cuernos" más redondos */
+.itch-icon::before, .itch-icon::after {
+    content: '';
+    position: absolute;
+    top: -3px; /* Ajustado para que encaje mejor con el cuerpo redondo */
+    width: 7px;
+    height: 7px;
+    background-color: #E0DCC8;
+    border-radius: 50%;
+}
+.itch-icon::before { left: 3px; }
+.itch-icon::after { right: 3px; }
+
+/* Creando los iconos */
+
+/* --- Icono YouTube --- */
+.yt-icon {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #E0DCC8; /* Triángulo beige */
+    margin-left: 5px; /* Ajuste óptico */
+    transition: border-left-color 0.3s ease;
+}
+
+.btn-os-icon:hover .yt-icon {
+    border-left-color: #77A248; /* Triángulo verde al hacer hover */
+}
+
+/* --- Icono Instagram --- */
+.insta-icon {
+    width: 26px;
+    height: 26px;
+    border: 3px solid #E0DCC8; /* Cuadrado beige redondeado */
+    border-radius: 7px;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.insta-lens {
+    width: 8px;
+    height: 8px;
+    border: 3px solid #E0DCC8; /* Círculo beige central */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border-color 0.3s ease;
+}
+
+/* Punto de la cámara */
+.insta-icon::after {
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #E0DCC8;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-os-icon:hover .insta-icon,
+.btn-os-icon:hover .insta-lens {
+    border-color: #77A248; /* Cambia a verde al hacer hover */
+}
+
+.btn-os-icon:hover .insta-icon::after {
+    background-color: #77A248;
+}
+
+/* --- Icono Menú (Líneas) --- */
+.btn-os-menu {
+    background: none; /* Botón de menú sin fondo por defecto, solo el icono */
+    border: none;
+}
+.btn-os-menu:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.menu-icon-bars {
+    width: 30px;
+    height: 4px;
+    background-color: #E0DCC8; /* Línea central */
+    border-radius: 2px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon-bars::before,
+.menu-icon-bars::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #E0DCC8;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon-bars::before { top: -10px; } /* Línea superior */
+.menu-icon-bars::after { bottom: -10px; } /* Línea inferior */
+
+.btn-os-menu:hover .menu-icon-bars,
+.btn-os-menu:hover .menu-icon-bars::before,
+.btn-os-menu:hover .menu-icon-bars::after {
+    background-color: #77A248; /* Cambia a verde al hacer hover */
+}
+
+/* --- Ajustes Responsive --- */
+@media (max-width: 640px) {
+    .btn-juega {
+        width: 45px;      
+        height: 45px;
+        padding: 0;       
+        border-radius: 17px; /* Redondeado igual que el icono si quieres armonía */
+        
+        /* FUERZA EL BORDE: cámbialo a 3px o 4px según el estilo de tu profesor */
+        border: 4px solid #E0DCC8; 
+        background-color: #77A248;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-juega {
+        display: none;
+    }
+
+    .itch-icon {
+        display: block;
+    }
+    
+    /* ... resto de botones de redes ... */
+    .btn-os-icon {
+        width: 45px;
+        height: 45px;
+        border: 4px solid #E0DCC8; /* Asegura el mismo grosor aquí también */
+        border-radius: 17px;
+    }
 }
 
 /* Botón hamburguesa */
@@ -143,18 +316,6 @@ body {
     padding: 4px;
     z-index: 2;
     transition: opacity 0.3s, transform 0.2s;
-}
-
-.menu-btn:hover {
-    opacity: 0.75;
-    transform: scale(1.08);
-}
-
-.menu-btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
 }
 
 /* Menú desplegable mobile */
@@ -345,7 +506,7 @@ body {
     object-fit: contain;
 }
 
-.footer-social {
+.footer-social-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,12 +521,6 @@ body {
 .footer-social-icons {
     display: flex;
     gap: 10px;
-}
-
-.footer-icon {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
 }
 
 /* Responsive Footer */
