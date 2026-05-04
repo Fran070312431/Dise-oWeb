@@ -105,56 +105,156 @@ body {
     align-items: center;
 }
 
-.icon-btn,
-.play-btn {
-    display: flex;
+/* SVG Icons */
+.svg-icon {
+    width: 42px;
+    height: 42px;
+    fill: #E0DCC8;
+    transition: fill 0.3s ease;
+    display: block;
+}
+
+.btn-os-icon:hover .svg-icon,
+.btn-os-text:hover .svg-icon {
+    fill: #77A248;
+}
+
+/* Itch.io SVG: oculto en desktop, visible en mobile */
+.itch-svg {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .itch-svg {
+        display: block;
+    }
+}
+
+/* --- Estilos Base para todos los botones --- */
+.btn-os-icon,
+.btn-os-text {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.3s, transform 0.2s;
+    background-color: #77A248; /* Color verde de tus imágenes */
+    border: 4px solid #E0DCC8;   /* Color beige de tus bordes */
+    transition: all 0.3s ease;
+    cursor: pointer;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.icon-btn:hover,
-.play-btn:hover {
-    opacity: 0.75;
-    transform: scale(1.08);
+/* Efecto Hover general */
+.btn-os-icon:hover,
+.btn-os-text:hover {
+    transform: scale(1.05); /* Efecto de pulsación */
+    background-color: #E0DCC8; /* Invierte colores al hacer hover */
 }
 
-.btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+/* Botones Icono */
+.btn-os-icon {
+    width: 60px;  /* Ajusta el tamaño según necesites */
+    height: 60px;
+    border-radius: 27px;
+    position: relative;
 }
 
-.play-btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+/* Botón Texto */
+.btn-os-text {
+    padding: 10px 20px;
+    border-radius: 27px;
+    color: #E0DCC8;
+    font-family: 'Jaro', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-os-text:hover,
+.btn-os-text:hover .texto-juega {
+    color: #77A248;
+}
+
+/* Icono Menú */
+.btn-os-menu {
+    background: none; /* Botón de menú sin fondo por defecto, solo el icono */
+    border: none;
+}
+.btn-os-menu:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
+.menu-icon-bars {
+    width: 30px;
+    height: 4px;
+    background-color: #E0DCC8; /* Línea central */
+    border-radius: 2px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon-bars::before,
+.menu-icon-bars::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #E0DCC8;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon-bars::before { top: -10px; } /* Línea superior */
+.menu-icon-bars::after { bottom: -10px; } /* Línea inferior */
+
+.btn-os-menu:hover .menu-icon-bars,
+.btn-os-menu:hover .menu-icon-bars::before,
+.btn-os-menu:hover .menu-icon-bars::after {
+    background-color: #77A248; /* Cambia a verde al hacer hover */
+}
+
+/* Ajustes Responsive */
+@media (max-width: 640px) {
+    .btn-juega {
+        width: 45px;      
+        height: 45px;
+        padding: 0;       
+        border-radius: 17px;
+        
+        /* FUERZA EL BORDE */
+        border: 4px solid #E0DCC8; 
+        background-color: #77A248;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-juega {
+        display: none;
+    }
+    
+    /* resto de botones de redes */
+    .btn-os-icon {
+        width: 45px;
+        height: 45px;
+        border: 4px solid #E0DCC8; /* Asegura el mismo grosor aquí también */
+        border-radius: 17px;
+    }
 }
 
 /* Botón hamburguesa */
 .menu-btn {
     display: none;
-    background: none;
-    border: none;
     cursor: pointer;
-    padding: 4px;
     z-index: 2;
-    transition: opacity 0.3s, transform 0.2s;
+    padding: 0;
 }
 
-.menu-btn:hover {
-    opacity: 0.75;
-    transform: scale(1.08);
-}
-
-.menu-btn-icon {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+.menu-btn .svg-icon {
+    width: 30px; /* Un poco más pequeño que los de redes para que quepa bien */
+    height: 30px;
 }
 
 /* Menú desplegable mobile */
@@ -331,41 +431,48 @@ body {
 }
 
 /* Columna derecha */
+.footer-social-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .footer-col--right {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
     justify-content: flex-end;
-    margin-top: auto;
 }
 
 .footer-udit {
     height: 60px;
     width: auto;
     object-fit: contain;
+    margin-bottom: 0;
 }
 
-.footer-social {
+.footer-social-Cointainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .footer-social-label {
     font-size: 1rem;
-    color: #a3d46a;
+    color: #77A248;
+    letter-spacing: 1px;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .footer-social-icons {
     display: flex;
-    gap: 10px;
-}
-
-.footer-icon {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
+    flex-direction: row;
+    gap: 12px;
 }
 
 /* Responsive Footer */
@@ -475,7 +582,10 @@ body {
     }
 
     .menu-btn {
-        display: flex;
+        display: inline-flex;
+        width: 45px;
+        height: 45px;
+        border-radius: 17px;
     }
 
     .nav1 ul {
