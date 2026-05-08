@@ -124,7 +124,7 @@ body {
     display: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .itch-svg {
         display: block;
     }
@@ -216,7 +216,7 @@ body {
 }
 
 /* Ajustes Responsive */
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .btn-juega {
         width: 45px;      
         height: 45px;
@@ -307,7 +307,6 @@ body {
 /* Spacer */
 .spacer {
     height: 2000px;
-    background: linear-gradient(to bottom, #1E1121);
 }
 
 /* Offset anclas */
@@ -601,4 +600,8 @@ body {
     .logo-img {
         height: 40px; /* logo más pequeño en mobile */
     }
+}
+
+body. {
+
 }
