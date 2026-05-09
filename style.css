@@ -790,8 +790,7 @@ video{
     justify-content: space-around;
     align-items:center; 
     width: 100%;
-    min-height: 500px;
-    padding-top: 6rem;
+    min-height: 600px;
 }
 .PInicio {
     margin: 1rem;
@@ -810,11 +809,10 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #E0DCB8;
     gap: 1.5rem;
     width: 100%;
-    padding: 1rem;
 }
 
 
@@ -830,14 +828,33 @@ video{
         flex-direction: column;
         text-align: center;
         min-height: auto;
+        margin-bottom: 6rem;
     }
 
     .ConoceJuego {
         align-items: center;
         max-width: 90%;
+        margin-bottom: 3rem;
     }
 
     .banner-redes {
         justify-content: center;
     }
+     .PInicio {
+        max-height: 300px;
+        width: auto;
+        object-fit: contain;
+    }
 }
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
