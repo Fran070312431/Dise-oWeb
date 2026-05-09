@@ -625,6 +625,9 @@ video{
     letter-spacing: 4px;
 }
 .Titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-top: 30px;
 }
 .Descripcion {
@@ -633,7 +636,8 @@ video{
     max-width: 80%;
     color: #E0DCB8;
     line-height: 1;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 .BotonDESCARGA {
@@ -656,8 +660,7 @@ video{
 
 .texto-juegaYa {
   color: #E0DCB8;              
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 .BtDescarga:hover {
   transform: scale(1.05);
