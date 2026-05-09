@@ -682,7 +682,7 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220px;
+    height: 200px;
     width: 100%;
     background-image: url(Imagenes/PatronZombiesFondo.png); 
     background-size: cover;       
@@ -696,7 +696,7 @@ video{
   transition: opacity 0.8s ease-in-out;
   text-align: center;
   max-width: 60%;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .slide.activo {
