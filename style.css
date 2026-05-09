@@ -675,45 +675,45 @@ body {
 
 /* ZOMBIE 1 */
 .img-z1-a {
-    max-width: 300px;
+    max-width: 500px;
     transform: translateX(20px) translateY(200px);
 }
 
 .img-z1-b {
-    max-width: 300px;
+    max-width: 500px;
     transform: translateX(-30px) translateY(-10px);
 }
 
 /* ZOMBIE 2 */
 .img-z2-a {
-    max-width: 400px;
+    max-width: 500px;
     transform: translateX(20px) translateY(-10px);
 }
 
 .img-z2-b {
-    max-width: 400px;
+    max-width: 500px;
     transform: translateX(-20px) translateY(200px);
 }
 
 /* ZOMBIE 3 */
 .img-z3-a {
-    max-width: 240px;
+    max-width: 350px;
     transform: translateX(20px) translateY(200px);
 }
 
 .img-z3-b {
-    max-width: 240px;
+    max-width: 350px;
     transform: translateX(-20px) translateY(-10px);
 }
 
 /* ZOMBIE 4 */
 .img-z4-a {
-    max-width: 240px;
+    max-width: 350px;
     transform: translateX(20px) translateY(-10px);
 }
 
 .img-z4-b {
-    max-width: 240px;
+    max-width: 350px;
     transform: translateX(-20px) translateY(160px);
 }
 
