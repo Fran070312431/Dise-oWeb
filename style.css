@@ -612,7 +612,8 @@ video{
 .Titulos {
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 200;
     color: #77A248;
     text-shadow:
     -2px 0 #E0DCB8,
@@ -625,13 +626,13 @@ video{
     -2px  2px #E0DCB8,
      2px  2px #E0DCB8;
     line-height: 1;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 .Titulo {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 6rem;
 }
 .Descripcion {
     display: flex;
@@ -639,8 +640,8 @@ video{
     max-width: 80%;
     color: #E0DCB8;
     line-height: 1;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 .BotonDESCARGA {
@@ -674,7 +675,7 @@ video{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .carrusel {
@@ -694,7 +695,7 @@ video{
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
   text-align: center;
-  max-width: 700px;
+  max-width: 60%;
   padding: 0 20px;
 }
 
@@ -713,6 +714,28 @@ video{
   color: #77A248;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10rem;
+}
+
+.punto {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #77A248; 
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.punto.activo {
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 
