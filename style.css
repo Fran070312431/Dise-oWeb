@@ -602,10 +602,13 @@ body {
     }
    
 }
+
+/* Teaser*/
 video{
     display: flex;
     width: 100%;
 }
+
 .Titulos {
     display: flex;
     justify-content: center;
@@ -666,4 +669,50 @@ video{
   transform: scale(1.05);
   background-color: #77A248;
 }
+
+.Reviews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+    background-image: url(Imagenes/PatronZombiesFondo.png); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.slide.activo {
+  opacity: 1;
+}
+
+.frase {
+  color: #E0DCB8;
+  font-size: 1.4rem;
+}
+
+.medio {
+  display: block;
+  margin-top: 10px;
+  color: #77A248;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 
