@@ -124,7 +124,7 @@ body {
     display: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .itch-svg {
         display: block;
     }
@@ -216,7 +216,7 @@ body {
 }
 
 /* Ajustes Responsive */
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .btn-juega {
         width: 45px;      
         height: 45px;
@@ -307,7 +307,6 @@ body {
 /* Spacer */
 .spacer {
     height: 2000px;
-    background: linear-gradient(to bottom, #1E1121);
 }
 
 /* Offset anclas */
@@ -604,178 +603,367 @@ body {
 }
 /*  GALERÍA PERSONAJES  */
 
-/* TITULO GALERÍA */
+/* ================================================= */
+/* =============== GALERÍA PERSONAJES ============== */
+/* ================================================= */
+
+/* ===== CONTENEDOR GENERAL ===== */
+
+.galeria-personajes{
+    padding: 100px 8%;
+}
+
+/* ===== TITULO ===== */
+
 .galeria-title{
     text-align: center;
-    font-size: 7rem; 
+    font-size: 7rem;
     color: #E0DCC8;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 140px auto;
     width: fit-content;
 }
+
+/* ===== GRID GENERAL ===== */
 
 .personaje-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
-    margin-bottom: 190px;
+    margin-bottom: 220px;
 }
 
-/* CONTROL POR BLOQUES */
+/* ===== CONTROL INDIVIDUAL DE BLOQUES ===== */
 
-.zombie-1 {
+.zombie-1{
     margin-top: 100px;
 }
 
-.zombie-2 {
-    margin-top: 400px;
+.zombie-2{
+    margin-top: 350px;
     margin-left: 30px;
 }
 
-.zombie-3 {
-    margin-top: 500px;
+.zombie-3{
+    margin-top: 450px;
 }
 
-.zombie-4 {
-    margin-top: 400px;
+.zombie-4{
+    margin-top: 350px;
     margin-left: -40px;
 }
 
-/* CONTENIDO */
+/* ===== CONTENIDO ===== */
+
 .lado{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
+
+/* ===== IMÁGENES BASE ===== */
 
 .lado img{
     height: auto;
+    display: block;
 }
 
-/* LORE */
+/* ================================================= */
+/* ================= LORE BASE ===================== */
+/* ================================================= */
+
 .lore-box{
     background: #2b362f;
     color: #E0DCC8;
-    padding: 15px 20px;
-    max-width: 600px;
-    font-size: 1.2rem;
+
+    border: 3px solid #4d5f53;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.4);
+
+    line-height: 1.5;
 }
 
-/* QUITAMOS ROTACIONES GLOBALES (IMPORTANTE) */
-.arriba{
-    transform: none;
+/* ================================================= */
+/* ========== TAMAÑOS + POSICIÓN IMÁGENES ========== */
+/* ================================================= */
+
+/* ===== ZOMBIE 1 ===== */
+
+.img-z1-a{
+    width: 600px;
+
+    transform:
+        translateX(20px)
+        translateY(200px);
 }
 
-.abajo{
-    transform: none;
+.img-z1-b{
+    max-width: 800px;
+
+    transform:
+        translateX(-30px)
+        translateY(-10px);
 }
 
-/* ===== TAMAÑOS + POSICIÓN IMÁGENES ===== */
+/* ===== ZOMBIE 2 ===== */
 
-/* ZOMBIE 1 */
-.img-z1-a {
-    max-width: 500px;
-    transform: translateX(20px) translateY(200px);
+.img-z2-a{
+    width: 850px;
+
+    transform:
+        translateX(20px)
+        translateY(-10px);
 }
 
-.img-z1-b {
-    max-width: 500px;
-    transform: translateX(-30px) translateY(-10px);
+.img-z2-b{
+    max-width: 1100px;
+
+    transform:
+        translateX(-20px)
+        translateY(200px);
 }
 
-/* ZOMBIE 2 */
-.img-z2-a {
-    max-width: 500px;
-    transform: translateX(20px) translateY(-10px);
+/* ===== ZOMBIE 3 ===== */
+
+.img-z3-a{
+    width: 450px;
+
+    transform:
+        translateX(-500px)
+        translateY(200px);
 }
 
-.img-z2-b {
-    max-width: 500px;
-    transform: translateX(-20px) translateY(200px);
+.img-z3-b{
+    max-width: 700px;
+
+    transform:
+        translateX(500px)
+        translateY(-10px);
 }
 
-/* ZOMBIE 3 */
-.img-z3-a {
-    max-width: 350px;
-    transform: translateX(20px) translateY(200px);
+/* ===== ZOMBIE 4 ===== */
+
+.img-z4-a{
+    width: 550px;
+
+    transform:
+        translateX(-100px)
+        translateY(-10px);
 }
 
-.img-z3-b {
-    max-width: 350px;
-    transform: translateX(-20px) translateY(-10px);
+.img-z4-b{
+    max-width: 750px;
+
+    transform:
+        translateX(100px)
+        translateY(160px);
 }
 
-/* ZOMBIE 4 */
-.img-z4-a {
-    max-width: 350px;
-    transform: translateX(20px) translateY(-10px);
+/* ================================================= */
+/* ============ CONTROL LORE INDIVIDUAL ============ */
+/* ================================================= */
+
+/* ===== ZOMBIE 1 ===== */
+
+.lore-z1-a{
+
+    width: 500px;
+    min-height: 220px;
+
+    padding: 30px 35px;
+
+    font-size: 1.4rem;
+
+    transform:
+        translateX(10px)
+        translateY(200px)
+        rotate(5deg);
 }
 
-.img-z4-b {
-    max-width: 350px;
-    transform: translateX(-20px) translateY(160px);
+.lore-z1-b{
+
+    width: 700px;
+    min-height: 250px;
+
+    padding: 45px 50px;
+
+    font-size: 1.6rem;
+
+    transform:
+        translateX(-40px)
+        translateY(-15px)
+        rotate(-5deg);
 }
 
-/* ===== POSICIÓN LORE INDIVIDUAL ===== */
+/* ===== ZOMBIE 2 ===== */
 
-/* ZOMBIE 1 */
-.lore-z1-a {
-    transform: translateX(10px) translateY(200px) rotate(5deg);
+.lore-z2-a{
+
+    width: 600px;
+    min-height: 230px;
+
+    padding: 35px 40px;
+
+    font-size: 1.5rem;
+
+    transform:
+        translateX(-25px)
+        translateY(10px)
+        rotate(5deg);
 }
 
-.lore-z1-b {
-    transform: translateX(-40px) translateY(-15px) rotate(-5deg);
+.lore-z2-b{
+
+    width: 850px;
+    min-height: 320px;
+
+    padding: 60px 60px;
+
+    font-size: 1.7rem;
+
+    transform:
+        translateX(25px)
+        translateY(200px)
+        rotate(-5deg);
 }
 
-/* ZOMBIE 2 */
-.lore-z2-a {
-    transform: translateX(-25px) translateY(10px) rotate(5deg);
+/* ===== ZOMBIE 3 ===== */
+
+.lore-z3-a{
+
+    width: 550px;
+    min-height: 240px;
+
+    padding: 35px 40px;
+
+    font-size: 1.5rem;
+
+    transform:
+        translateX(-15px)
+        translateY(200px)
+        rotate(5deg);
 }
 
-.lore-z2-b {
-    transform: translateX(25px) translateY(200px) rotate(-5deg);
+.lore-z3-b{
+
+    width: 700px;
+    min-height: 250px;
+
+    padding: 45px 50px;
+
+    font-size: 1.6rem;
+
+    transform:
+        translateX(15px)
+        translateY(-15px)
+        rotate(-5deg);
 }
 
-/* ZOMBIE 3 */
-.lore-z3-a {
-    transform: translateX(-15px) translateY(200px) rotate(5deg);
+/* ===== ZOMBIE 4 ===== */
+
+.lore-z4-a{
+
+    width: 550px;
+    min-height: 240px;
+
+    padding: 35px 40px;
+
+    font-size: 1.5rem;
+
+    transform:
+        translateX(-20px)
+        translateY(-10px)
+        rotate(5deg);
 }
 
-.lore-z3-b {
-    transform: translateX(15px) translateY(-15px) rotate(-5deg);
+.lore-z4-b{
+
+    width: 800px;
+    min-height: 300px;
+
+    padding: 55px 55px;
+
+    font-size: 1.7rem;
+
+    transform:
+        translateX(20px)
+        translateY(150px)
+        rotate(-5deg);
 }
 
-/* ZOMBIE 4 */
-.lore-z4-a {
-    transform: translateX(-20px) translateY(-10px) rotate(5deg);
-}
+/* ================================================= */
+/* ================= RESPONSIVE ==================== */
+/* ================================================= */
 
-.lore-z4-b {
-    transform: translateX(20px) translateY(150px) rotate(-5deg);
-}
+/* ===== TABLET ===== */
 
-/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px){
 
-@media (max-width: 900px){
+    .galeria-title{
+        font-size: 5rem;
+    }
+
     .personaje-grid{
         gap: 40px;
+        margin-bottom: 180px;
     }
 
     .lado img{
-        max-width: 130px;
-    }
-}
-
-@media (max-width: 600px){
-
-    .personaje-grid{
-        grid-template-columns: 1fr;
-        gap: 40px;
+        max-width: 300px;
     }
 
     .lore-box{
-        transform: none;
+        font-size: 1.2rem !important;
+        padding: 25px !important;
+        max-width: 500px !important;
+    }
+}
+
+/* ===== MÓVIL ===== */
+
+@media (max-width: 700px){
+
+    .galeria-title{
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+
+    .personaje-grid{
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin-bottom: 120px;
+    }
+
+    .zombie-1,
+    .zombie-2,
+    .zombie-3,
+    .zombie-4{
+        margin: 0;
+    }
+
+    .lado{
+        gap: 30px;
+    }
+
+    .lado img{
+
+        max-width: 220px !important;
+
+        transform: none !important;
+    }
+
+    .lore-box{
+
+        max-width: 100% !important;
+
+        padding: 20px !important;
+
+        font-size: 1rem !important;
+
         text-align: center;
+
+        transform: none !important;
     }
 }
