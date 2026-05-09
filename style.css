@@ -742,7 +742,6 @@ video{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-bottom: 6rem;
     padding-top: 6rem;
     flex-wrap: wrap;
 }
@@ -784,4 +783,61 @@ video{
      2px  2px #E0DCB8;
     line-height: 1;
     letter-spacing: 2px;
+}
+
+.PruebaJuego {
+    display: flex;
+    justify-content: space-around;
+    align-items:center; 
+    width: 100%;
+    min-height: 500px;
+    padding-top: 6rem;
+}
+.PInicio {
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.PantallaJuego {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.ConoceJuego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+    color: #E0DCB8;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.banner-redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .PruebaJuego {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .ConoceJuego {
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .banner-redes {
+        justify-content: center;
+    }
 }
