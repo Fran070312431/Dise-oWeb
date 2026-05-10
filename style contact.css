@@ -740,6 +740,12 @@ body {
     color: #E0DCB8;
     gap: 1rem;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
 legend{
     color: #77A248;
     font-size: 40px;
@@ -757,6 +763,20 @@ legend{
     line-height: 1;
     letter-spacing: 2px;
     padding: 1rem;
+}
+
+label{
+    color: #E0DCB8;
+    padding: 1rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    background-color:#E0DCB8;
+    color: #5F3C67;
+    border-radius: 27px;
+    padding: 0.5rem;
 }
 
 
