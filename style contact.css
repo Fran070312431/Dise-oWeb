@@ -729,6 +729,15 @@ body {
     padding: 1rem;
     flex-direction: column;
     color: #1E1121;
+    gap: 1rem;
+}
+
+.listainfo{
+    display: flex;
+    height: 100%;
+    align-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .formulariocontacto{
@@ -738,7 +747,6 @@ body {
     justify-content: center;
     border-radius: 30px;
     color: #E0DCB8;
-    gap: 1rem;
 }
 form{
     display: flex;
@@ -767,7 +775,6 @@ legend{
 
 label{
     color: #E0DCB8;
-    padding: 1rem;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -778,6 +785,20 @@ input{
     border-radius: 27px;
     padding: 0.5rem;
 }
-
+textarea{
+    background-color:#E0DCB8;
+    color: #5F3C67;
+    border-radius: 27px;
+    padding: 3rem;
+    display: flex;
+   justify-content: center;
+}
+.botonformulario{
+    background-color: #77A248;
+    color: #E0DCB8;
+    border-radius: 27px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
 
 
