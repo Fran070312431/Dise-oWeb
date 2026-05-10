@@ -717,8 +717,9 @@ body {
     background-color: #E0DCB8;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2rem;
+    gap: 2rem;
 }
 
 .infoencuesta{
@@ -729,3 +730,34 @@ body {
     flex-direction: column;
     color: #1E1121;
 }
+
+.formulariocontacto{
+    width: 50%;
+    display: flex;
+    background-color: #7B4E86;
+    justify-content: center;
+    border-radius: 30px;
+    color: #E0DCB8;
+    gap: 1rem;
+}
+legend{
+    color: #77A248;
+    font-size: 40px;
+    color: #77A248;
+    text-shadow:
+    -2px 0 #E0DCB8,
+     2px 0 #E0DCB8,
+     0 -2px #E0DCB8,
+     0  2px #E0DCB8,
+
+    -2px -2px #E0DCB8,
+     2px -2px #E0DCB8,
+    -2px  2px #E0DCB8,
+     2px  2px #E0DCB8;
+    line-height: 1;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+
+
