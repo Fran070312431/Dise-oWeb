@@ -664,10 +664,12 @@ body {
 }
 
 .namemember{
+    display: flex;
     color: #E0DCC8;
     background-color: #5F3C67;
     padding: 10px 20px;
     border-radius: 27px;
+    justify-content: center;
 }
 
 .memberdescription{
