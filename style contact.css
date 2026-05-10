@@ -696,7 +696,7 @@ body {
 }
 
 .separator{
-    font-size: 96px;
+    font-size: 3rem;
     font-weight: lighter;
     color: #77A248;
     text-shadow:
@@ -717,13 +717,14 @@ body {
     background-color: #E0DCB8;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
     gap: 2rem;
 }
 
 .infoencuesta{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 1rem;
@@ -741,7 +742,7 @@ body {
 }
 
 .formulariocontacto{
-    width: 50%;
+    width: 100%;
     display: flex;
     background-color: #7B4E86;
     justify-content: center;
