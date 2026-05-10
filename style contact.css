@@ -602,3 +602,51 @@ body {
     }
 }
 
+#Intro{
+
+    display: flex;
+    justify-content: center;
+}
+.Logo_Sick_Gecko_w{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.LSG{
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+.btn-os-text-long {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #77A248;
+    border: 4px solid #E0DCC8;   
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+   padding: 10px 20px;
+   border-radius: 27px;
+
+}
+
+.text-btn{
+   text-decoration: none;
+   color: #E0DCC8;
+}
+
+.btn-os-text-long:hover {
+    transform: scale(1.05); /* Efecto de pulsación */
+    background-color: #E0DCC8; /* Invierte colores al hacer hover */
+}
+
+.text-btn:hover{
+    color: #77A248;
+}
+
+.members{
+    display: flex;
+    flex-direction: row;
+}
