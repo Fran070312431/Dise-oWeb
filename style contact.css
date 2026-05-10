@@ -684,3 +684,48 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
+
+.title_encuesta{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #5F3C67;
+    margin-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.separator{
+    font-size: 96px;
+    font-weight: lighter;
+    color: #77A248;
+    text-shadow:
+    -4px 0 #E0DCB8,
+     4px 0 #E0DCB8,
+     0 -4px #E0DCB8,
+     0  4px #E0DCB8,
+
+    -4px -4px #E0DCB8,
+     4px -4px #E0DCB8,
+    -4px  4px #E0DCB8,
+     4px  4px #E0DCB8;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.fondoencuestas{
+    background-color: #E0DCB8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.infoencuesta{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    flex-direction: column;
+    color: #1E1121;
+}
