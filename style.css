@@ -1355,8 +1355,9 @@ video{
 }
 
 .members{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
     gap: 2rem;
     padding: 2rem;
     background-color: #E0DCC8;
@@ -1368,7 +1369,7 @@ video{
     align-items: center;
     text-align: center;
     gap: 1rem;
-    padding: 1rem;
+   width: 240px;
 }
 
 .namemember{
@@ -1380,9 +1381,9 @@ video{
 }
 
 .memberdescription{
-   font-size: 1rem;
+   font-size: 16px;
     line-height: 1.4;
-    max-width: 250px;
+    max-width: 240px;
     color: #1E1121;
 }
 
@@ -1425,7 +1426,6 @@ video{
     background-color: #E0DCB8;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
     gap: 2rem;
@@ -1509,4 +1509,17 @@ textarea{
     padding: 10px 20px;
     font-size: 20px;
 }
+@media (max-width: 900px) {
+     .fondoencuestas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipo {
+        flex-direction: column;
+    }
 
+    .miembro {
+        width: 90%;
+    }
+}
