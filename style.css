@@ -857,12 +857,12 @@ body {
 
 .img-z4-a{
     width: 280px;
-    transform: translateX(-20px) translateY(-20px);
+    transform: translateX(-200px) translateY(30px);
 }
 
 .img-z4-b{
     width: 250px;
-    transform: translateX(20px) translateY(30px);
+    transform: translateX(120px) translateY(-70px);
 }
 
 .lore-z4-a{
@@ -873,7 +873,8 @@ body {
     font-size: 1.5rem;
 
     transform:
-        translateX(-20px)
+        translateX(100px)
+        translateY(-50px)
         rotate(4deg);
 }
 
@@ -885,8 +886,8 @@ body {
     font-size: 1.5rem;
 
     transform:
-        translateX(20px)
-        translateY(-20px)
+        translateX(-650px)
+        translateY(100px)
         rotate(-4deg);
 }
 
