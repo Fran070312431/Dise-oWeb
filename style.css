@@ -723,12 +723,12 @@ body {
 
 .img-z1-a{
     width: 260px;
-    transform: translateX(-50px) translateY(-60px);
+    transform: translateX(200px) translateY(-90px);
 }
 
 .img-z1-b{
     width: 320px;
-    transform: translateX(40px) translateY(-30px);
+    transform: translateX(-150px) translateY(-30px);
 }
 
 .lore-z1-a{
@@ -739,7 +739,7 @@ body {
     font-size: 1.4rem;
 
     transform:
-        translateX(-20px)
+        translateX(-160px)
         translateY(-40px)
         rotate(4deg);
 }
@@ -752,7 +752,8 @@ body {
     font-size: 1.4rem;
 
     transform:
-        translateX(30px)
+        translateX(160px)
+        translateY(-10px)
         rotate(-4deg);
 }
 
@@ -812,12 +813,12 @@ body {
 
 .img-z3-a{
     width: 400px;
-    transform: translateX(-30px) translateY(-140px);
+    transform: translateX(-30px) translateY(250px);
 }
 
 .img-z3-b{
     width: 450px;
-    transform: translateX(20px) translateY(-20px);
+    transform: translateX(20px) translateY(-320px);
 }
 
 .lore-z3-a{
@@ -829,7 +830,7 @@ body {
 
     transform:
         translateX(-20px)
-        translateY(-120px)
+        translateY(-500px)
         rotate(4deg);
 }
 
@@ -841,8 +842,8 @@ body {
     font-size: 1.6rem;
 
     transform:
-        translateX(20px)
-        translateY(-20px)
+        translateX(50px)
+        translateY(500px)
         rotate(-4deg);
 }
 
@@ -873,8 +874,8 @@ body {
     font-size: 1.5rem;
 
     transform:
-        translateX(390px)
-        translateY(-50px)
+        translateX(440px)
+        translateY(-80px)
         rotate(4deg);
 }
 
@@ -886,7 +887,7 @@ body {
     font-size: 1.5rem;
 
     transform:
-        translateX(-450px)
+        translateX(-410px)
         translateY(100px)
         rotate(-4deg);
 }
