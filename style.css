@@ -452,26 +452,19 @@ main {
     margin-bottom: 0;
 }
 
-.footer-social-Cointainer {
+.footer-social-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-}
-
-.footer-social-label {
-    font-size: 1rem;
-    color: #77A248;
-    letter-spacing: 1px;
-    flex-direction: column;
-    text-transform: uppercase;
-    margin: 0;
+    text-align: center;
 }
 
 .footer-social-icons {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
 }
 
 /* Responsive Footer */
