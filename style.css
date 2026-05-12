@@ -1390,8 +1390,8 @@ video{
 }
 
 .memberpicture{
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -1431,7 +1431,7 @@ video{
     justify-content: space-around;
     padding: 2rem;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .infoencuesta{
@@ -1522,8 +1522,11 @@ textarea{
         flex-direction: column;
     }
 
-    .miembro {
-        width: 90%;
+    .member1{
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        gap: 20px;
     }
 }
 
