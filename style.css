@@ -345,6 +345,7 @@ body {
     color: #E0DCC8;
     position: relative;
     overflow: hidden;
+    margin-top: -70px;
 }
 
 /* Imágenes en las esquinas */
@@ -618,5 +619,373 @@ body {
 
     .logo-img {
         height: 40px; /* logo más pequeño en mobile */
+    }
+}
+
+/* DEVLOG SECTION  */
+
+.devlog-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('Imagenes/Fondo_devlog.png');
+    background-size: 1899px 1198px;
+    background-repeat: repeat;
+    background-position: center;
+
+    padding: 80px clamp(20px, 5vw, 100px) 120px;
+    margin-bottom: 0;
+}
+
+/* Título principal */
+.devlog-title {
+    text-align: center;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #77A248;
+
+    -webkit-text-stroke: 3px #E0DCC8;
+
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(0, 0, 0, 0.5);
+
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+
+/* Contenedor */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Caja */
+.update-box {
+    background-color: #5F3C67;
+    border: 5px solid #77A248;
+    border-radius: 25px;
+
+    padding: 30px 40px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título versión */
+.version-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #77A248;
+
+    text-shadow:
+        0 0 10px rgba(0, 0, 0, 0.6);
+
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Lista */
+.changelog {
+    list-style: none;
+    padding-left: 0;
+}
+
+.changelog li {
+    color: #E0DCC8;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.8;
+
+    padding: 8px 0;
+    padding-left: 35px;
+
+    position: relative;
+}
+
+/* Flecha */
+.changelog li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #77A248;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .devlog-section {
+        padding: 60px 20px 100px;
+    }
+
+    .update-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+
+    .updates-container {
+        gap: 30px;
+    }
+
+    .changelog li {
+        padding-left: 25px;
+    }
+}
+/* DEVLOG SECTION  */
+
+.devlog-section {
+    width: 100%;
+    min-height: 100vh;
+    
+    /* Fondo repetido */
+    background-image: url('Imagenes/Fondo_devlog.png');
+    background-size: 1899px 1198px;
+    background-repeat: repeat;
+    background-position: center;
+    
+    padding: 80px clamp(20px, 5vw, 100px) 120px;
+    margin-bottom: 0;
+}
+
+/* Título principal del Devlog */
+.devlog-title {
+    text-align: center;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #77A248;
+    
+    -webkit-text-stroke: 3px #E0DCC8;
+    
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(0, 0, 0, 0.5);
+    
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+
+/* Contenedor de todas las actualizaciones */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada caja de actualización */
+.update-box {
+    background-color: #5F3C67;
+    border: 5px solid #77A248;
+    border-radius: 25px; /* Puedes cambiar esto */
+    
+    padding: 30px 40px;
+    
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de cada versión */
+.version-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #77A248;
+        
+    text-shadow:
+        0 0 10px rgba(0, 0, 0, 0.6);
+    
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Lista de cambios */
+.changelog {
+    list-style: none;
+    padding-left: 0;
+}
+
+.changelog li {
+    color: #E0DCC8;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.8;
+    
+    padding: 8px 0;
+    padding-left: 35px;
+    
+    position: relative;
+}
+
+/* Bullet point personalizado */
+.changelog li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #77A248;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .devlog-section {
+        padding: 60px 20px 100px;
+    }
+    
+    .update-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+    
+    .updates-container {
+        gap: 30px;
+    }
+    
+    .changelog li {
+        padding-left: 25px;
+    }
+}
+
+/* DEVLOG SECTION  */
+
+.devlog-section {
+    width: 100%;
+    min-height: 100vh;
+    
+    /* Fondo repetido */
+    background-image: url('Imagenes/Fondo_devlog.png');
+    background-size: 1899px 1198px;
+    background-repeat: repeat;
+    background-position: center;
+    
+    padding: 80px clamp(20px, 5vw, 100px) 120px;
+    margin-bottom: 0;
+}
+
+/* Título principal del Devlog */
+.devlog-title {
+    text-align: center;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #77A248;
+    
+    -webkit-text-stroke: 3px #E0DCC8;
+    
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(0, 0, 0, 0.5);
+    
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+
+/* Contenedor de todas las actualizaciones */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada caja de actualización */
+.update-box {
+    background-color: #5F3C67;
+    border: 5px solid #77A248;
+    border-radius: 25px; /* Puedes cambiar esto */
+    
+    padding: 30px 40px;
+    
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de cada versión */
+.version-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #77A248;
+        
+    text-shadow:
+        0 0 10px rgba(0, 0, 0, 0.6);
+    
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Lista de cambios */
+.changelog {
+    list-style: none;
+    padding-left: 0;
+}
+
+.changelog li {
+    color: #E0DCC8;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.8;
+    
+    padding: 8px 0;
+    padding-left: 35px;
+    
+    position: relative;
+}
+
+/* Bullet point personalizado */
+.changelog li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #77A248;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .devlog-section {
+        padding: 60px 20px 100px;
+    }
+    
+    .update-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+    
+    .updates-container {
+        gap: 30px;
+    }
+    
+    .changelog li {
+        padding-left: 25px;
     }
 }
